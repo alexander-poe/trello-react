@@ -15,6 +15,10 @@ export default function List (props) {
       <ul>
         {cardsArr}
       </ul>
+      <form>
+        <input type="text" />
+        <input type="submit" />
+      </form>
     </div>
   )
 }
