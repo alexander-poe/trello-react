@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import List from './list.js';
-import ListConatiner from './list-container.js';
+import ListContainer from './list-container.js';
 
 export default class Board extends React.Component {
   constructor(props) {

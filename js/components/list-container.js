@@ -12,11 +12,28 @@ export default class ListContainer extends React.Component {
     }
   }
 
+  export default function List (props) {
+
+
+
+
   render() {
-    <List
-      cards={cards}
-      onChange={props.onAddInputChanged}
-      onSubmit={props.onAddSubmit}
-      />
+    const cardsArr = props.cards.map((cardElem, index) => {
+      const listItem = <li>{cardElem}</li>;
+      return <Card text={listItem} key={index}/>
+    })
+    return (
+      <div>
+        <h4>{props.title}</h4>
+        <ul>
+          {cardsArr}
+        </ul>
+        <form onSubmit={props.onAddSubmit}>
+          <input onChange={props.onAddInputChanged} type="text" />
+          <input type="submit"/>
+        </form>
+      </div>
+
+    )
   }
 }
