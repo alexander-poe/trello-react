@@ -4,6 +4,7 @@ import ReactDOM  from 'react-dom'
 
 import Board from './components/board'
 
+
 const boardState = {
 	title: "My board title",
 	lists: [
@@ -26,4 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Board title={boardState.title} lists={boardState.lists} />,
     document.getElementById('app'))
-})
+});
