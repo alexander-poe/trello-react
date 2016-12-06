@@ -6,7 +6,7 @@ import Board from './components/board'
 
 const boardState = {
 	title: "My board title",
-	lists: [
+	lists:
 		{
 			listTitle: 'List 1',
 			card: ['groceries', 'laundry', 'make chores']
@@ -23,10 +23,7 @@ const boardState = {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  //const boardTitle = 'My First Board'
-  //const lists = ['First List', 'Second List', 'Third List']
   ReactDOM.render(
     <Board title={boardState.title} lists={boardState.lists} />,
     document.getElementById('app'))
 })
-
