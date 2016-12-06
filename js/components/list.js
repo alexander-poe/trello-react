@@ -1,9 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Card from './card.js'
-
-
+import Card from './card.js';
 
 export default function List (props) {
 	//console.log(props, "list")
