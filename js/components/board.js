@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import List from './list.js'
+import List from './list.js';
 
 export default function Board (props) {
   const eachList = props.lists.map((listElem, index) => {
@@ -11,14 +11,9 @@ export default function Board (props) {
   return (
     <div>
       <h2>{props.title}</h2>
-      <ul>
+      <div>
         {eachList}
-      </ul>
+      </div>
     </div>
   );
-}
-
-Board.defaultProps = {
-  title: 'Default-Board',
-  lists: ['Default-One', 'Default-Two']
 }

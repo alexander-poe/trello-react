@@ -6,7 +6,7 @@ import Board from './components/board'
 
 const boardState = {
 	title: "My board title",
-	lists:
+	lists: [
 		{
 			listTitle: 'List 1',
 			card: ['groceries', 'laundry', 'make chores']
